@@ -56,4 +56,12 @@ queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/S
 game:GetService('TeleportService'):Teleport(2628115891)
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Teleport to Trident Survival v2 and execute script",
+   Callback = function()
+   
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptSkiddie69/pecterlua/main/trident%20survival%20v2'))()")
+game:GetService('TeleportService'):Teleport(13253735473)
+   end,
+})
 end
